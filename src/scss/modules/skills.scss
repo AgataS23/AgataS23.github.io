@@ -1,0 +1,79 @@
+.skills {
+  background: $blue;
+  color: #fff;
+  padding: 6.4rem 1.6rem 8.8rem;
+  &__columns {
+    @media (min-width: $desktop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 118.4rem;
+      margin: 0 auto;
+    }
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    text-align: center;
+    margin: 0 0 6.4rem;
+    @media (min-width: $desktop) {
+      font-size: 4.8rem;
+      line-height: 5.6rem;
+    }
+  }
+}
+
+.skills-list {
+  font-style: normal;
+  color: $lighterBlue;
+  width: 28.8rem;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+
+  &__item {
+    padding: 0 0 0 2.4rem;
+    margin: 0 0 1.6rem;
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0.7rem;
+      display: block;
+      content: "";
+      width: 1.2rem;
+      height: 0.9rem;
+      background: url("../assets/img/small-tick-green.svg");
+      .skills-list--blue & {
+        background: url("../assets/img/small-tick-blue.svg");
+      }
+      .skills-list--dot & {
+        width: 0.2rem;
+        height: 0.2rem;
+        border-radius: 50%;
+        top: 1rem;
+        left: 0.5rem;
+        background: $lighterBlue;
+      }
+    }
+  }
+}
+
+.skills-section {
+  margin-top: 6.4rem;
+  &__emoji {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    display: block;
+    text-align: center;
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 4.4rem;
+    text-align: center;
+    margin: 1.6rem 0 2.4rem;
+  }
+}
