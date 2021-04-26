@@ -1,0 +1,113 @@
+.projects {
+  padding: 6.4rem 1.6rem 8.8rem;
+  @media (min-width: $desktop) {
+    padding: 6.4rem 1.6rem 17.6rem;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    max-width: 786px;
+    margin: 0 auto 46px;
+    @media (min-width: $desktop) {
+      font-size: 2rem;
+      line-height: 4rem;
+      margin-bottom: 12.8rem;
+    }
+  }
+  &__header {
+    font-size: 36px;
+    line-height: 48px;
+    color: $textDark;
+    text-align: center;
+    margin: 0 0 4rem;
+    @media (min-width: $desktop) {
+      font-size: 4.8rem;
+      line-height: 5.6rem;
+    }
+  }
+}
+
+.project {
+  background: $gray;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  color: $lightConsole;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+  font-family: Roboto Mono;
+  box-shadow: 0px 0.4rem 1.6rem rgba(0, 0, 0, 0.25);
+  @media (min-width: $desktop) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  &__circle {
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: $mediumGray;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+  }
+  &__content {
+    padding: 2.4rem 1.6rem;
+    @media (min-width: $desktop) {
+      padding: 1.8rem 4.8rem 5.8rem;
+    }
+  }
+  &__grid {
+    display: grid;
+    column-gap: 0.8rem;
+    margin: 0 0 0.8rem 0;
+    grid-template-columns: 10.2rem 1fr;
+    @media (min-width: $desktop) {
+      grid-template-columns: 11.6rem 1fr;
+    }
+
+    &--description {
+      margin-bottom: 2.4rem;
+    }
+  }
+  &__label {
+    display: block;
+    text-align: right;
+    color: $console;
+    font-weight: normal;
+  }
+  &__link {
+    color: $linkConsole;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    color: #fff;
+    margin-top: 2.4rem;
+    @media (min-width: $desktop) {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+  }
+  &__window {
+    height: 4rem;
+    background: $darkGray;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 1.6rem;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  column-gap: 2.4rem;
+  row-gap: 2.4rem;
+  max-width: 118.4rem;
+  margin: 0 auto;
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
