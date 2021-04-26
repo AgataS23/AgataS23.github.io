@@ -1,0 +1,14 @@
+@import "~normalize.css";
+
+@import "_variables";
+@import "modules/hello.scss";
+
+body {
+  background: $color;
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
