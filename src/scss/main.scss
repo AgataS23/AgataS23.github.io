@@ -1,14 +1,32 @@
 @import "~normalize.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+
 @import "_variables";
-@import "modules/hello.scss";
+// @import "modules/contact.scss";
+// @import "modules/hand.scss";
+@import "modules/hero.scss";
+// @import "modules/projects.scss";
+// @import "modules/skills.scss";
+// @import "modules/socials.scss";
+
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
-  background: $color;
-  color: #fff;
-  font-size: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  font-family: Nunito;
+  color: $text;
 }
+

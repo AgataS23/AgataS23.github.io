@@ -1,0 +1,118 @@
+.hero {
+  padding: 7.4rem 1.6rem 8.8rem;
+  @media (min-width: $tablet) {
+    max-width: 76.8rem;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 100%;
+    padding-bottom: 17.6rem;
+  }
+
+  
+  &__bubble {
+    position: absolute;
+    left: calc(50% + 9rem);
+    top: -2.6rem;
+  }
+  &__contact {
+    border-radius: 6.4rem;
+    color: #fff;
+    background: $lightBlue;
+    display: inline-block;
+    padding: .4rem 2.4rem;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-decoration: none;
+  }
+  &__description {
+    text-align: center;
+    @media (min-width: $desktop) {
+      max-width: 78.6rem;
+      margin: 0 auto;
+      position: relative;
+      &::before, &::after {
+        width: 8.294rem;
+        height: 25.488rem;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+      }
+    
+      &::before {
+        background: url('../assets/img/hero-left.svg');
+        right: 100%;
+      }
+      &::after {
+        background: url('../assets/img/hero-right.svg');
+        left: 100%;
+      }
+    }
+  }
+  &__header {
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+    text-align: center;
+    color: $textDark;
+    @media (min-width: $desktop) {
+      font-size: 3.2rem;
+      line-height: 4rem;
+    }
+  }
+  &__hello {
+    display: none;
+    @media (min-width: $desktop) {
+      display: block;
+      background: $blue;
+      color: #fff;
+      padding: 1.6rem 1.9rem;
+      border-radius: 1.6rem;
+      font-weight: bold;
+      font-size: 3.2rem;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 3.2rem;
+        display: block;
+        width: 1.742rem;
+        height: 2.266rem;
+        background: url("../assets/img/speech.svg");
+      }
+    }
+  }
+  &__image {
+    box-sizing: content-box;
+    width: 20rem;
+    height: 20rem;
+    border: 1.6rem solid #f6f9fd;
+    border-radius: 50%;
+  }
+  &__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  &__link {
+    font-weight: bold;
+    color: $lightBlue;
+    text-decoration: none;
+  }
+  &__paragraph {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    text-align: center;
+    margin-bottom: 4.8rem;
+    
+  }
+  &__special {
+    color: $blue;
+    white-space: nowrap;
+  }
+}
