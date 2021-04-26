@@ -1,0 +1,26 @@
+.socials {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 5.6rem 6.4rem;
+    
+    &__item {
+      margin: 0 1.2rem;
+    }
+    &__link {
+      padding: 0;
+      width: 4.8rem;
+      height: 4.8rem;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0px .4rem .8rem rgba(16, 112, 202, 0.15);
+    }
+    &__icon--cv {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+}
